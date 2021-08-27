@@ -1,0 +1,55 @@
+{% extends 'core/base.html' %} {% load static %} {% block content %}
+<div>
+  <div class="text-center">
+    <img
+      src="{% static 'core/images/mypic.jpeg' %}"
+      alt="Profile Pic"
+      class="img-thumbnail rounded-circle mt-5"
+      width="250px"
+      height="250px"
+    />
+  </div>
+
+  <div class="mt-5 text-white mx-5 text-justify">
+    <h1 class="font-weight-bold st-font">Hello,</h1>
+    <div class="px-4" style="line-height: 1.8rem">
+      <p style="text-indent: 100px">
+        I am <b class="text-warning">Pulkit Kumar Agarwal</b> having a little
+        bit of web development experinece. I offer the technical expertise you
+        are seeking for your web developer position.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum vel
+        earum dolore tenetur iste, maiores culpa aperiam dignissimos dolorum
+        quod doloribus ad accusantium ratione quis ab quae blanditiis laboriosam
+        repellat et eaque, minima hic. Ipsum architecto illo laborum dicta quos
+        pariatur eos iusto sequi voluptas. Suscipit vel debitis aspernatur
+        repellendus?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam vitae
+        animi quibusdam aliquam cumque praesentium sapiente adipisci quam quis,
+        provident minus unde atque quidem dolorum voluptates quae! Ipsa
+        repudiandae vel, ullam odit temporibus officiis, eaque molestias, neque
+        numquam repellat possimus optio reiciendis laborum cum ratione
+        perspiciatis dicta sequi dolorum. Repudiandae iste a nam suscipit ex
+        delectus maiores, doloremque voluptatum, explicabo omnis aliquid
+        deleniti ipsam sapiente quo, molestias ducimus quisquam neque doloribus
+        totam aut laudantium velit architecto. Dignissimos qui modi, vel natus
+        ipsum amet enim alias commodi animi temporibus similique saepe neque
+        quas consectetur quaerat recusandae quo, laudantium praesentium non
+        accusantium.
+      </p>
+    </div>
+
+    <div class="text-center">
+      <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5"
+        >Hire</a
+      >
+      <a href="{% url 'contact' %}" class="btn btn-outline-info my-3"
+        >Contact</a
+      >
+    </div>
+  </div>
+</div>
+{% endblock content %}

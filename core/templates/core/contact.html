@@ -1,0 +1,61 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-warning mb-5 border-bottom">CONTACT ME</h1>
+
+    <div class="row text-white">
+        <p class="mx-auto mb-5">Do you have any questions? Do not hasitate to contact.</p>
+
+        <div class="col-sm-9 mb-5">
+            <form class="row g-3">
+                <div class="col-md-6 mb-3">
+                  <label for="inputName4" class="form-label">Your Name</label>
+                  <input type="text" class="form-control" id="inputName4">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Your Email *</label>
+                    <input type="email" class="form-control" id="inputEmail4" required>
+                  </div>
+                <div class="col-12 mb-3">
+                  <label for="inputSubject" class="form-label">Your Subject</label>
+                  <input type="text" class="form-control" id="inputSubject">
+                </div>
+                <div class="col-12 mb-3">
+                    <label for="inputMessage" class="form-label">Your Message *</label>
+                    <textarea class="form-control" id="inputMessaget"></textarea>
+                  </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+              </form>
+        </div>
+
+        <div class="col-sm-3 mb-5 text-center">
+            <ul class="list-unstyled">
+                <li>
+                    <i class="fas fa-map-marker fa-2x mb-3 i-color"></i>
+                    <p>Jaipur, Rajasthan, India</p>
+                </li>
+                <li>
+                    <i class="fas fa-phone fa-2x mb-3 i-color"></i>
+                    <p>+91 9000000000</p>
+                </li>
+                <li>
+                    <i class="fas fa-envelope fa-2x mb-3 i-color"></i>
+                    <p>pka5667@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Add font awesome icons -->
+    <div class="text-center">
+        <a href="#"><i class="fab fa-facebook-f mb-3 i-color"></i></a>
+        <a href="#"><i class="fab fa-twitter mb-3 i-color"></i></a>
+        <a href="#"><i class="fab fa-google mb-3 i-color"></i></a>
+        <a href="#"><i class="fab fa-linkedin mb-3 i-color"></i></a>
+        <a href="#"><i class="fab fa-instagram mb-3 i-color"></i></a>
+    </div>
+</div>
+{% endblock content %}
